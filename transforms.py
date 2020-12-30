@@ -36,7 +36,6 @@ class Resize(object):
         target = F.resize(target, self.size, interpolation=Image.NEAREST)
         return image, target
 
-
 class RandomResize(object):
     def __init__(self, min_size, max_size=None):
         self.min_size = min_size
